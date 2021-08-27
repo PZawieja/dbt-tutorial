@@ -1,12 +1,7 @@
-with payments as (
-    
     select 
         orderid AS order_id
         , paymentmethod AS payment_method
         , status
-        , amount
+        , amount / 100 as amount
         , created
     from raw.stripe.payment
-)
-
-select * from payments
