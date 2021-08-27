@@ -44,6 +44,5 @@ models:
 
 models:
   jaffle_shop:
-  ...
     marts:
       +materialized: table      
